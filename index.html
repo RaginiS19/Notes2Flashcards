@@ -11,9 +11,12 @@
     <h1>📝 Notes2Flashcards</h1>
     <p>Paste your lecture notes below. We'll split them into flashcards for quick review!</p>
 
-    <textarea id="notesInput" placeholder="Paste your notes here..." rows="10"></textarea>
+    <textarea id="notesInput" placeholder="e.g. What is CSS? - Cascading Style Sheets" rows="8"></textarea>
+    
     <div class="buttons">
       <button onclick="generateFlashcards()">Generate Flashcards</button>
+      <button onclick="shuffleFlashcards()">Shuffle Cards</button>
+      <button onclick="clearFlashcards()">Clear All</button>
       <button onclick="downloadCSV()">Download as CSV</button>
     </div>
 
