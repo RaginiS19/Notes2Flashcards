@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notes2Flashcards</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Notes2Flashcards</h1>
+    <p>Paste your lecture notes below. We'll split them into flashcards for quick review!</p>
+
+    <textarea id="notesInput" placeholder="Paste your notes here..." rows="10"></textarea>
+    <div class="buttons">
+      <button onclick="generateFlashcards()">Generate Flashcards</button>
+      <button onclick="downloadCSV()">Download as CSV</button>
+    </div>
+
+    <div id="flashcardsContainer" class="flashcards-grid"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
